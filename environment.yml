@@ -1,0 +1,9 @@
+name: thesis-benchmarking
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - jupyterlab
+prefix: /home/CSCScience.ca/apetkau/miniconda3/envs/thesis-benchmarking
+
