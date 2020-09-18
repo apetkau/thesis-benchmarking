@@ -1,0 +1,7 @@
+input/
+input-small/
+__pycache__/
+.ipynb_checkpoints
+test-berkeley.db
+bigsi/bigsi-data
+cobs/cobs-data

@@ -6,5 +6,7 @@ channels:
 dependencies:
   - jupyterlab
   - matplotlib
+  - bigsi
+  - mccortex
 prefix: /home/CSCScience.ca/apetkau/miniconda3/envs/thesis-benchmarking
 
