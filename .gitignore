@@ -5,3 +5,4 @@ __pycache__/
 test-berkeley.db
 bigsi/bigsi-data
 cobs/cobs-data
+/lib/cobs

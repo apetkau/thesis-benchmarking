@@ -14,6 +14,10 @@ def clean_if_exists(path):
         else:
             shutil.rmtree(path)
             os.mkdir(path)
+
+def create_folder_if_doesnt_exist(path):
+    if not os.path.exists(path):
+        os.makedirs(path)
             
 def get_last_n_lines(string, n):
     return "\n".join(string.split("\n")[-n:])
