@@ -8,5 +8,8 @@ dependencies:
   - matplotlib
   - bigsi
   - mccortex
+  - mash
+  - parallel
+  - skesa
 prefix: /home/CSCScience.ca/apetkau/miniconda3/envs/thesis-benchmarking
 
