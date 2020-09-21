@@ -11,5 +11,7 @@ dependencies:
   - mash
   - parallel
   - skesa
+  - snippy
+  - perl==5.22.0.1
 prefix: /home/CSCScience.ca/apetkau/miniconda3/envs/thesis-benchmarking
 
