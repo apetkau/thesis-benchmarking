@@ -34,7 +34,10 @@ conda create --name mentalist mentalist
 # Can only use Python 2 and pip <= 9.0.3 due to installation issue
 conda create --name snapperdb pip==9.0.3 python=2.7 numpy bwa bowtie2 samtools bcftools gatk picard
 conda activate snapperdb
-pip install snapperdb phenix
+pip install phenix
+
+# Install Python package from GitHub source
+pip install -e lib/snapperdb
 ```
 
 #### Finish installing GATK

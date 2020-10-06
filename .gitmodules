@@ -1,3 +1,6 @@
 [submodule "lib/cmdbench"]
 	path = lib/cmdbench
 	url = https://github.com/manzik/cmdbench.git
+[submodule "lib/snapperdb"]
+	path = lib/snapperdb
+	url = https://github.com/phe-bioinformatics/snapperdb.git
