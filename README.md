@@ -55,3 +55,22 @@ gatk3-register $PWD/GenomeAnalysisTK-3.8-1-0-gf15c1c3ef/GenomeAnalysisTK.jar
 ```
 sudo apt install postgresql
 ```
+
+# Datasets
+
+I used data from <https://github.com/WGS-standards-and-analysis/datasets>. To download please do the following:
+
+```bash
+conda env create -f datasets-env.yml
+conda activate wgs-standards-and-analysis
+
+# I found checksums failed for the Genbank file, which I assume is because a new version was uploaded. You may need to modify the sha256 checksum in the Makefile if this error occurs.
+GenFSGopher.pl --outdir Salmonella_enterica_1203NYJAP-1.simulated --layout byformat --numcpus 8 datasets/Salmonella_enterica_1203NYJAP-1.simulated.tsv
+
+# For these files I found the reference tree was not available and so I had to remove the `tree.dnd` task from the Makefile.
+GenFSGopher.pl --outdir Campylobacter_jejuni_0810PADBR-1 --layout byformat --numcpus 8 datasets/Campylobacter_jejuni_0810PADBR-1.tsv
+
+# For these files the reference tree was not found (so I had to delete the `tree.dnd` task). And the genbank file sha256 code was different, so I updated it in the Makefile.
+GenFSGopher.pl --outdir Escherichia_coli_1405WAEXK-1 --layout byformat --numcpus 8 datasets/Escherichia_coli_1405WAEXK-
+1.tsv
+```

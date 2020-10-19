@@ -1,0 +1,12 @@
+name: wgs-standards-and-analysis
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - mamba
+  - perl
+  - make
+  - sra-tools
+  - entrez-direct
+  - wget
