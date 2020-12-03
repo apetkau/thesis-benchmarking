@@ -74,3 +74,11 @@ GenFSGopher.pl --outdir Campylobacter_jejuni_0810PADBR-1 --layout byformat --num
 GenFSGopher.pl --outdir Escherichia_coli_1405WAEXK-1 --layout byformat --numcpus 8 datasets/Escherichia_coli_1405WAEXK-
 1.tsv
 ```
+
+# Execute
+
+To execute a notebook from the command-line, run:
+
+```bash
+jupyter nbconvert --ExecutePreprocessor.timeout=None --to notebook --execute [notebook.ipynb]
+```
